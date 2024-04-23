@@ -1,0 +1,288 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  /* Use flexbox */
+  flex-direction: column;
+  align-items: center;
+  /* Center horizontally */
+  justify-content: center;
+  /* Center vertically */
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 24px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  /* Add this line to create a flex container */
+  justify-content: center;
+  /* Center the list horizontally */
+
+}
+
+/* Style for list items */
+li {
+  margin: 5px;
+  font-size: 18px;
+  display: inline-block;
+  /* Display list items inline */
+  padding: 10px;
+  /* Add some padding for spacing */
+  background-color: #f0f0f0;
+  /* Add a background color for visual separation */
+  cursor: pointer;
+  border-radius: 4px;
+  user-select: none;
+  /* Prevent text selection during drag */
+}
+
+li:hover {
+  transform: scale(1.05);
+}
+
+/* Highlight the dragged item */
+li.dragged {
+  background-color: #a0a0a0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.column:hover {
+  transform: translateY(-10px);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+}
+
+
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* Center the content horizontally */
+  align-items: center;
+  /* Center the content vertically */
+  flex-wrap: wrap;
+}
+
+.image-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.image:hover {
+  transform: translateY(-10px);
+}
+
+.category-label {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.column img {
+  max-width: 300px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+  object-fit: cover;
+  flex-wrap: wrap;
+
+}
+
+.centered-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /* Adjust as needed to control the height of the box */
+  background-color: #f0f0f0;
+  /* Add more styling properties to customize the box's appearance */
+}
+
+.box-heading {
+  font-size: 24px;
+  margin: 0;
+}
+
+.result-box {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 400px;
+}
+
+.result-box:hover {
+  transform: translateY(-10px);
+}
+
+.result-box h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.marks {
+  margin-top: 20px;
+}
+
+.marks p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.result-button {
+  display: block;
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.result-button:hover {
+  background-color: #0056b3;
+}
+
+.result-button:focus {
+  outline: none;
+}
+
+.result-button:active {
+  transform: scale(0.95);
+}
+
+
+.image-upload-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.upload-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.upload-button:hover {
+  background-color: #0056b3;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.category-select {
+  margin-top: 20px;
+}
+
+#category {
+
+  padding: 8px;
+  font-size: 16px;
+}
